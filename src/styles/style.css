@@ -5,3 +5,23 @@
 
   color: #fff;
 }
+
+:root {
+  --white: #fff;
+  --translucentWhite:  #d7ccc0;
+  --light: #f5f4f0;
+  --basic: #fe8a02;
+  --basicDark: #42413c;
+  --dark: #2a2626;
+  --translucentDark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
+
+body {
+  font-family: "Open Sans";
+}
+
+h {
+  font-family: "Neucha";
+}
