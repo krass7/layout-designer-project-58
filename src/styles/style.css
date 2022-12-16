@@ -1,27 +1,113 @@
 /** CSS STYLE **/
-
-.hello {
-  display: block;
-
-  color: #fff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
   --white: #fff;
-  --translucentWhite:  #d7ccc0;
+  --translucent-white:  #d7ccc0;
   --light: #f5f4f0;
   --basic: #fe8a02;
-  --basicDark: #42413c;
+  --basic-dark: #42413c;
   --dark: #2a2626;
-  --translucentDark: #908d8b;
+  --translucent-dark: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
 }
 
 body {
-  font-family: "Open Sans";
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #2A2626;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h {
-  font-family: "Neucha";
+h1, h2, h3 {
+  font-family: 'Neucha', cursive;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 0;
+}
+h1 {
+  font-size: 72px;
+}
+h2 {
+  font-size: 60px;
+}
+h3 {
+  font-size: 34px;
+}
+p {
+  margin: 0 0 15px 0;
+}
+
+header section {
+  position: relative;
+}
+.back {
+  position: absolute;
+  width: 1440px;
+  height: 915px;
+  top: 0px;
+  left: 0px;
+  background-image: url("images/Фоновый паттерн.png");
+  opacity: 0.06;
+}
+.text1 {
+  position: absolute;
+  left: 140px;
+  top: 103px;
+  color: var(--basic);
+}
+.text2 {
+  position: absolute;
+  left: 140px;
+  top: 284px;
+  color: var(--dark);
+  z-index: 1;
+}
+.header-image {
+  position: absolute;
+  left: 420px;
+  top: 50px;
+}  
+.text3 {
+  position: absolute;
+  width: 540px;
+  height: 130px;
+  left: 140px;
+  top: 585px;
+  display: flex;
+}
+.text4 {
+  position: absolute;
+  width: 540px;
+  height: 155px;
+  left: 735px;
+  top: 585px;
+  display: flex;
+  flex-direction: column;
+}
+.button {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  left: 735px;
+  top: 805px;
+  background: var(--basic);
+  text-transform: uppercase;
+  color: var(--white);
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.6em;
+}
+.button:hover {
+  cursor: pointer;
 }
