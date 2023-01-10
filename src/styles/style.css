@@ -63,6 +63,10 @@ p {
   color: var(--basic-dark);
 }
 
+.blue {
+  color: var(--blue);
+}
+
 .back-nav {
   background: var(--light);
 }
@@ -128,7 +132,7 @@ p {
   z-index: 1;
 }
 
-.link {
+.header-link {
   display: flex;
   text-transform: uppercase;
   font-weight: bold;
@@ -138,7 +142,7 @@ p {
   margin-top: 40px;
 }
 
-.button {
+.header-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,7 +151,7 @@ p {
   background: var(--basic);
 }
 
-.button:hover {
+.header-button:hover {
   cursor: pointer;
   background: #EA7600;
 }
@@ -555,4 +559,86 @@ p {
   gap: 30px;
   margin-top: 20px;
   z-index: 1;
+}
+
+/* CSS FOOTER */
+
+.back-footer {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  height: 550px;
+  padding: 100px 165px 0 165px;
+  background: var(--white);
+}
+
+.subscription {
+  display: flex;
+  width: 1110px;
+  height: 190px;
+  background: var(--basic-dark);
+}
+
+.subscription-text1 {
+  width: 50%;
+  padding: 55px 0 55px 55px;
+}
+
+.subscription-text2 {
+  width: 50%;
+  padding: 38px 0 40px;
+}
+
+.email-size {
+  font-size: 18px;
+}
+
+.form {
+  display: flex;
+}
+
+.form-text {
+  width: 423px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding: 0 15px;
+}
+
+::placeholder {
+  color: #757575;
+  opacity: 0.2;
+}
+
+.footer-button {
+  display: flex;
+  width: 70px;
+  height: 50px;
+  background: var(--basic);
+}
+
+.footer-button:hover {
+  cursor: pointer;
+  background: #EA7600;
+}
+
+.footer-image {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+}
+
+.text-size12 {
+  font-size: 12px;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 76px;
+}
+
+.text-size14 {
+  font-size: 14px;
 }
