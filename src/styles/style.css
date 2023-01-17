@@ -27,6 +27,9 @@ body {
   font-size: 16px;
   line-height: 1.6em;
   color: #2A2626;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1, h2, h3 {
@@ -49,6 +52,11 @@ h3 {
 
 p {
   margin-bottom: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
 }
 
 .orange {
@@ -75,6 +83,11 @@ p {
   width: 350px;
   height: 350px;
   padding: 25px;
+}
+
+.block-nav:hover, .block-nav:hover * {
+  background: #EA7600;
+  color: var(--white);
 }
 
 .block-width {
@@ -137,7 +150,6 @@ p {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--white);
-  text-decoration: none;
   width: 150px;
   margin-top: 40px;
 }
@@ -152,7 +164,6 @@ p {
 }
 
 .header-button:hover {
-  cursor: pointer;
   background: #EA7600;
 }
 
@@ -201,12 +212,13 @@ p {
   height: 950px;
 }
 
-.block-nav:first-child {
+.block-nav-first {
+  width: 350px;
+  height: 350px;
   padding: 0;
 }
 
-.block-nav:first-child h3 {
-  margin: 0;
+.block-nav-first h3 {
   font-size: 52px;
 }
 
@@ -618,7 +630,6 @@ p {
 }
 
 .footer-button:hover {
-  cursor: pointer;
   background: #EA7600;
 }
 
