@@ -189,7 +189,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 1440px;
-  height: 850px;
+  height: 805px;
 
   background: var(--white);
 }
@@ -208,13 +208,13 @@ a {
 .video-text {
   display: flex;
   justify-content: center;
-  padding-top: 27px;
+  padding-top: 30px;
 }
 
 .video {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
+  padding-top: 8px;
 }
 
 /* CSS MAIN BLOCK NAVIGATION */
