@@ -1,11 +1,11 @@
 /** CSS STYLE **/
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 :root {
@@ -21,20 +21,23 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.6em;
-  color: #2A2626;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  color: #2a2626;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  line-height: 1.6em;
 }
 
-h1, h2, h3 {
-  font-family: 'Neucha', cursive;
+h1,
+h2,
+h3 {
   font-weight: 400;
+  font-family: Neucha, sans-serif;
   line-height: 1.2em;
 }
 
@@ -55,8 +58,8 @@ p {
 }
 
 a {
-  text-decoration: none;
   color: unset;
+  text-decoration: none;
 }
 
 .orange {
@@ -64,7 +67,7 @@ a {
 }
 
 .white {
-  color: var(--white)
+  color: var(--white);
 }
 
 .dark {
@@ -85,9 +88,11 @@ a {
   padding: 25px;
 }
 
-.block-nav:hover, .block-nav:hover * {
-  background: #EA7600;
+.block-nav:hover,
+.block-nav:hover * {
   color: var(--white);
+
+  background: #ea7600;
 }
 
 .block-width {
@@ -97,83 +102,95 @@ a {
 /* CSS HEADER */
 
 .back-light-header {
+  position: relative;
+
   display: flex;
   flex-direction: column;
-  position: relative;
   width: 1440px;
   height: 950px;
+
   background-color: var(--light);
 }
 
 .back-light-header::before {
   position: absolute;
-  content: "";
   top: 0;
   left: 0;
+  z-index: 1;
+
   width: 100%;
   height: 100%;
+
   background-image: url("../images/background.png");
   opacity: 0.1;
-  z-index: 1;
+
+  content: "";
 }
 
 .header-image {
   position: absolute;
-  height: 525px;
   top: 55px;
   right: -105px;
   z-index: 1;
+
+  height: 525px;
 }
 
 .header-title1 {
-  display: flex;
-  padding: 100px 165px 0 165px;
   z-index: 1;
+
+  display: flex;
+  padding: 100px 165px 0;
 }
 
 .header-title2 {
+  z-index: 1;
+
   display: flex;
   padding: 0 165px;
-  z-index: 1;
 }
 
 .header-paragraph {
+  z-index: 1;
+
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 200px 165px 0 165px;
-  z-index: 1;
+  padding: 200px 165px 0;
 }
 
 .header-link {
   display: flex;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: var(--white);
   width: 150px;
   margin-top: 40px;
+
+  color: var(--white);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .header-button {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 150px;
   height: 50px;
+
   background: var(--basic);
 }
 
 .header-button:hover {
-  background: #EA7600;
+  background: #ea7600;
 }
 
-/* CSS MAIN BLOCK VIDEO*/
+/* CSS MAIN BLOCK VIDEO */
 
 .back-white {
   display: flex;
   flex-direction: column;
   width: 1440px;
   height: 850px;
+
   background: var(--white);
 }
 
@@ -206,10 +223,11 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 20px 30px;
-  padding: 150px 165px 100px;
-  background: var(--basic-dark);
   width: 1440px;
   height: 950px;
+  padding: 150px 165px 100px;
+
+  background: var(--basic-dark);
 }
 
 .block-nav-first {
@@ -233,27 +251,32 @@ a {
 /* CSS MAIN BLOCK1 */
 
 .back-light-block1 {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
-  padding: 100px 165px 150px 165px;
   gap: 0 30px;
-  position: relative;
   width: 1440px;
   height: 950px;
+  padding: 100px 165px 150px;
+
   background-color: var(--light);
 }
 
 .back-light-block1::before {
   position: absolute;
-  content: "";
   top: 0;
   left: 0;
+  z-index: 1;
+
   width: 100%;
   height: 100%;
-  background-image: url("../images/background.png");
+
   background-color: var(--translucent-white);
+  background-image: url("../images/background.png");
   opacity: 0.1;
-  z-index: 1;
+
+  content: "";
 }
 
 .block1-image {
@@ -261,17 +284,19 @@ a {
 }
 
 .block1-text1 {
-  width: 502px;
   z-index: 1;
+
+  width: 502px;
 }
 
 .block1-text1 p {
-  font-family: 'Neucha', cursive;
+  margin: 0;
+
+  color: var(--translucent-dark);
   font-weight: 400;
   font-size: 24px;
+  font-family: Neucha, sans-serif;
   line-height: 1.2em;
-  color: var(--translucent-dark);
-  margin: 0;
 }
 
 .block1-text1 h2 {
@@ -279,63 +304,74 @@ a {
 }
 
 .block1-text2 {
+  z-index: 1;
+
   display: flex;
   width: 100%;
   height: 26px;
-  background: var(--brown);
   margin-top: 50px;
   padding-left: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
+
   color: var(--white);
-  z-index: 1;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  background: var(--brown);
 }
 
 .block1-paragraph {
+  z-index: 1;
+
   display: flex;
   gap: 30px;
   margin-top: 20px;
-  z-index: 1;
 }
 
 /* CSS MAIN BLOCK2 */
 
 .back-dark-block2 {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
-  padding: 100px 165px 150px 165px;
   gap: 0 30px;
-  position: relative;
   width: 1440px;
   height: 950px;
+  padding: 100px 165px 150px;
+
   background-color: var(--brown);
 }
 
 .back-dark-block2::before {
   position: absolute;
-  content: "";
   top: 0;
   left: 0;
+  z-index: 1;
+
   width: 100%;
   height: 100%;
+
   background-image: url("../images/background.png");
   opacity: 0.1;
-  z-index: 1;
+
+  content: "";
 }
 
 .block2-text1 {
-  width: 502px;
   z-index: 1;
+
+  width: 502px;
 }
 
 .block2-text1 p {
-  font-family: 'Neucha', cursive;
+  margin: 0;
+
+  color: var(--translucent-white);
   font-weight: 400;
   font-size: 24px;
+  font-family: Neucha, sans-serif;
   line-height: 1.2em;
-  color: var(--translucent-white);
-  margin: 0;
 }
 
 .block2-text1 h2 {
@@ -347,50 +383,59 @@ a {
 }
 
 .block2-text2 {
+  z-index: 1;
+
   display: flex;
   width: 100%;
   height: 26px;
-  background: var(--white);
   margin-top: 50px;
   padding-left: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
+
   color: var(--brown);
-  z-index: 1;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  background: var(--white);
 }
 
 .block2-paragraph {
+  z-index: 1;
+
   display: flex;
   gap: 30px;
   margin-top: 20px;
-  z-index: 1;
 }
 
 /* CSS MAIN BLOCK3 */
 
 .back-light-block3 {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
-  padding: 100px 165px 150px 165px;
   gap: 0 30px;
-  position: relative;
   width: 1440px;
   height: 950px;
+  padding: 100px 165px 150px;
+
   background-color: var(--light);
 }
 
 .back-light-block3::before {
   position: absolute;
-  content: "";
   top: 0;
   left: 0;
+  z-index: 1;
+
   width: 100%;
   height: 100%;
-  background-image: url("../images/background.png");
+
   background-color: var(--translucent-white);
+  background-image: url("../images/background.png");
   opacity: 0.1;
-  z-index: 1;
+
+  content: "";
 }
 
 .block3-image {
@@ -398,17 +443,19 @@ a {
 }
 
 .block3-text1 {
-  width: 502px;
   z-index: 1;
+
+  width: 502px;
 }
 
 .block3-text1 p {
-  font-family: 'Neucha', cursive;
+  margin: 0;
+
+  color: var(--translucent-dark);
   font-weight: 400;
   font-size: 24px;
+  font-family: Neucha, sans-serif;
   line-height: 1.2em;
-  color: var(--translucent-dark);
-  margin: 0;
 }
 
 .block3-text1 h2 {
@@ -416,63 +463,74 @@ a {
 }
 
 .block3-text2 {
+  z-index: 1;
+
   display: flex;
   width: 100%;
   height: 26px;
-  background: var(--brown);
   margin-top: 50px;
   padding-left: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
+
   color: var(--white);
-  z-index: 1;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  background: var(--brown);
 }
 
 .block3-paragraph {
+  z-index: 1;
+
   display: flex;
   gap: 30px;
   margin-top: 20px;
-  z-index: 1;
 }
 
 /* CSS MAIN BLOCK4 */
 
 .back-dark-block4 {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
-  padding: 100px 165px 150px 165px;
   gap: 0 30px;
-  position: relative;
   width: 1440px;
   height: 950px;
+  padding: 100px 165px 150px;
+
   background-color: var(--brown);
 }
 
 .back-dark-block4::before {
   position: absolute;
-  content: "";
   top: 0;
   left: 0;
+  z-index: 1;
+
   width: 100%;
   height: 100%;
+
   background-image: url("../images/background.png");
   opacity: 0.1;
-  z-index: 1;
+
+  content: "";
 }
 
 .block4-text1 {
-  width: 502px;
   z-index: 1;
+
+  width: 502px;
 }
 
 .block4-text1 p {
-  font-family: 'Neucha', cursive;
+  margin: 0;
+
+  color: var(--translucent-white);
   font-weight: 400;
   font-size: 24px;
+  font-family: Neucha, sans-serif;
   line-height: 1.2em;
-  color: var(--translucent-white);
-  margin: 0;
 }
 
 .block4-text1 h2 {
@@ -484,50 +542,59 @@ a {
 }
 
 .block4-text2 {
+  z-index: 1;
+
   display: flex;
   width: 100%;
   height: 26px;
-  background: var(--white);
   margin-top: 50px;
   padding-left: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
+
   color: var(--brown);
-  z-index: 1;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  background: var(--white);
 }
 
 .block4-paragraph {
+  z-index: 1;
+
   display: flex;
   gap: 30px;
   margin-top: 20px;
-  z-index: 1;
 }
 
 /* CSS MAIN BLOCK5 */
 
 .back-light-block5 {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
-  padding: 100px 165px 150px 165px;
   gap: 0 30px;
-  position: relative;
   width: 1440px;
   height: 950px;
+  padding: 100px 165px 150px;
+
   background-color: var(--light);
 }
 
 .back-light-block5::before {
   position: absolute;
-  content: "";
   top: 0;
   left: 0;
+  z-index: 1;
+
   width: 100%;
   height: 100%;
-  background-image: url("../images/background.png");
+
   background-color: var(--translucent-white);
+  background-image: url("../images/background.png");
   opacity: 0.1;
-  z-index: 1;
+
+  content: "";
 }
 
 .block5-image {
@@ -535,17 +602,19 @@ a {
 }
 
 .block5-text1 {
-  width: 502px;
   z-index: 1;
+
+  width: 502px;
 }
 
 .block5-text1 p {
-  font-family: 'Neucha', cursive;
+  margin: 0;
+
+  color: var(--translucent-dark);
   font-weight: 400;
   font-size: 24px;
+  font-family: Neucha, sans-serif;
   line-height: 1.2em;
-  color: var(--translucent-dark);
-  margin: 0;
 }
 
 .block5-text1 h2 {
@@ -553,24 +622,28 @@ a {
 }
 
 .block5-text2 {
+  z-index: 1;
+
   display: flex;
   width: 100%;
   height: 26px;
-  background: var(--brown);
   margin-top: 50px;
   padding-left: 10px;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
+
   color: var(--white);
-  z-index: 1;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  background: var(--brown);
 }
 
 .block5-paragraph {
+  z-index: 1;
+
   display: flex;
   gap: 30px;
   margin-top: 20px;
-  z-index: 1;
 }
 
 /* CSS FOOTER */
@@ -580,7 +653,8 @@ a {
   flex-direction: column;
   width: 1440px;
   height: 550px;
-  padding: 100px 165px 0 165px;
+  padding: 100px 165px 0;
+
   background: var(--white);
 }
 
@@ -588,6 +662,7 @@ a {
   display: flex;
   width: 1110px;
   height: 190px;
+
   background: var(--basic-dark);
 }
 
@@ -612,13 +687,15 @@ a {
 .form-text {
   width: 423px;
   height: 50px;
+  padding: 0 15px;
+
   border: none;
   outline: none;
-  padding: 0 15px;
 }
 
 ::placeholder {
   color: #757575;
+
   opacity: 0.2;
 }
 
@@ -626,11 +703,12 @@ a {
   display: flex;
   width: 70px;
   height: 50px;
+
   background: var(--basic);
 }
 
 .footer-button:hover {
-  background: #EA7600;
+  background: #ea7600;
 }
 
 .footer-image {
