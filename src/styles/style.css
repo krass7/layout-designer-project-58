@@ -288,7 +288,7 @@ a {
   flex-wrap: wrap;
   gap: 0 30px;
   width: 1440px;
-  height: 950px;
+  height: 905px;
   padding: 100px 165px 150px;
 
   background-color: var(--light);
@@ -303,7 +303,6 @@ a {
   width: 100%;
   height: 100%;
 
-  /* background-color: var(--translucent-white); */
   background-image: url("../images/background.png");
   opacity: 0.1;
 
@@ -312,6 +311,7 @@ a {
 
 .block1-image {
   z-index: 1;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 .block1-text1 {
