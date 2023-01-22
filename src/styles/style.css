@@ -368,7 +368,7 @@ a {
   flex-wrap: wrap;
   gap: 0 30px;
   width: 1440px;
-  height: 950px;
+  height: 855px;
   padding: 100px 165px 150px;
 
   background-color: var(--brown);
@@ -406,11 +406,12 @@ a {
 }
 
 .block2-text1 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 29px;
 }
 
 .block2-image {
   z-index: 1;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 .block2-text2 {
@@ -419,7 +420,7 @@ a {
   display: flex;
   width: 100%;
   height: 26px;
-  margin-top: 50px;
+  margin-top: 92px;
   padding-left: 10px;
 
   color: var(--brown);
