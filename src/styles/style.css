@@ -1,6 +1,6 @@
 /** CSS STYLE **/
-@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Neucha&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap";
 
 * {
   box-sizing: border-box;
@@ -288,7 +288,6 @@ a {
   flex-wrap: wrap;
   gap: 0 30px;
   width: 1440px;
-  /* height: 905px; */
   padding: 100px 165px;
 
   background-color: var(--light);
@@ -368,7 +367,6 @@ a {
   flex-wrap: wrap;
   gap: 0 30px;
   width: 1440px;
-  /* height: 855px; */
   padding: 100px 165px;
 
   background-color: var(--brown);
@@ -448,7 +446,6 @@ a {
   flex-wrap: wrap;
   gap: 0 30px;
   width: 1440px;
-  /* height: 880px; */
   padding: 100px 165px;
 
   background-color: var(--light);
@@ -528,7 +525,6 @@ a {
   flex-wrap: wrap;
   gap: 0 30px;
   width: 1440px;
-  /* height: 937px; */
   padding: 100px 165px;
 
   background-color: var(--brown);
@@ -608,7 +604,6 @@ a {
   flex-wrap: wrap;
   gap: 0 30px;
   width: 1440px;
-  /* height: 919px; */
   padding: 100px 165px;
 
   background-color: var(--light);
