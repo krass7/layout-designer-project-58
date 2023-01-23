@@ -310,6 +310,7 @@ a {
 
 .block1-image {
   z-index: 1;
+
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
@@ -409,6 +410,7 @@ a {
 
 .block2-image {
   z-index: 1;
+
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
@@ -468,6 +470,7 @@ a {
 
 .block3-image {
   z-index: 1;
+
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
@@ -567,6 +570,7 @@ a {
 
 .block4-image {
   z-index: 1;
+
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
@@ -626,6 +630,7 @@ a {
 
 .block5-image {
   z-index: 1;
+
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
