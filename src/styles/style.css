@@ -97,6 +97,7 @@ a {
   height: 950px;
 
   background-color: var(--light);
+  overflow: hidden;
 }
 
 .back-light-header::before {
