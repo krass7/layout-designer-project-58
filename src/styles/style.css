@@ -1,6 +1,6 @@
 /** CSS STYLE **/
-@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import "https://fonts.googleapis.com/css2?family=Neucha&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Open+Sans&display=swap";
 
 * {
   box-sizing: border-box;
@@ -37,7 +37,7 @@ h1,
 h2,
 h3 {
   font-weight: 400;
-  font-family: "Neucha", sans-serif;
+  font-family: Neucha, sans-serif;
   line-height: 1.2em;
 }
 
